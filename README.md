@@ -1,6 +1,6 @@
 # React JS Portfolio Website
 
-[🔗Live Demo🔗](https://rtaghizadev.vercel.app/)
+[🔗Live Demo🔗](https://nitun-singh-portfolio.netlify.app/)
 
 ## Features
 

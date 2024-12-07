@@ -1,34 +1,9 @@
 import './contact.css';
 
-import React, { useRef, useState } from 'react';
-
 import { MdOutlineEmail } from 'react-icons/md';
-import emailjs from '@emailjs/browser';
+import { TbBrandLinkedin } from 'react-icons/tb';
 
 const Contact = () => {
-  const [message, setMessage] = useState(false);
-  const formRef = useRef();
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setMessage(true);
-    emailjs
-      .sendForm(
-        'service_k2qawqh',
-        'template_c6rkpn6',
-        formRef.current,
-        'X7K7ebhIeOy3YwHki'
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-
-    e.target.reset();
-  };
   return (
     <section id="contact">
       <h5>Get In Touch</h5>
@@ -42,11 +17,26 @@ const Contact = () => {
           <article className="contact__option">
             <MdOutlineEmail className="contact__option-icon" />
             <h4>Email</h4>
-            <h5>rasiftaghizade@gmail.com</h5>
+            <h5>rathorenitun499@gmail.com</h5>
             <a href="mailto:mekomerikomg@gmail.com">Send a message</a>
           </article>
         </div>
-        <form ref={formRef} onSubmit={handleSubmit}>
+        <div className="contact__options">
+          <article className="contact__option">
+            <MdOutlineEmail className="contact__option-icon" />
+            <h4>Email</h4>
+            {/* <h5>rathorenitun499@gmail.com</h5> */}
+          </article>
+        </div>
+        <div className="contact__options">
+          <article className="contact__option">
+            <TbBrandLinkedin className="contact__option-icon" />
+            <a href="https://www.linkedin.com/in/nitunsingh/">
+              Connect on Linkedin
+            </a>
+          </article>
+        </div>
+        {/* <form ref={formRef} onSubmit={handleSubmit}>
           <input
             type="text"
             placeholder="Your Full Name"
@@ -69,7 +59,7 @@ const Contact = () => {
             Send Message
           </button>
           {message && <span>Thanks, I'll reply ASAP :)</span>}
-        </form>
+        </form> */}
       </div>
     </section>
   );

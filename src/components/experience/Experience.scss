@@ -1,0 +1,132 @@
+.experience-container {
+  margin: 0 auto;
+  //   width: 60%;
+  border-radius: 2rem;
+  //   background-color: var(--color-bg-variant);
+  margin-top: 3rem;
+}
+.experience-container:hover {
+  background: transparent;
+  border-color: var(--color-primary-variant);
+  cursor: default;
+}
+.experience-container > h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--color-primary);
+}
+
+.experience_container_ele_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.card {
+  display: flex;
+  align-items: flex-start;
+  //   background-color: #f9f9f9;
+  padding: 1rem;
+  width: 50%;
+  position: relative;
+}
+.card::after {
+  position: absolute;
+  content: '';
+  height: 2rem;
+  width: 5px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: #4b9cd3;
+  left: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 1s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.logo-container {
+  flex-shrink: 0;
+  margin-right: 1rem;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.details {
+  flex: 1;
+}
+
+.company-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #7cb9e8;
+}
+
+.company-name a {
+  text-decoration: none;
+  color: #0073e6;
+}
+
+.company-name a:hover {
+  text-decoration: underline;
+}
+
+.role {
+  font-size: 1rem;
+  color: #5072a7;
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+}
+
+// @media (max-width: 680px) {
+//   .card {
+//     flex-direction: column; /* Stack items vertically */
+//     align-items: center;
+//     text-align: center;
+//   }
+
+//   .logo-container {
+//     margin-right: 0; /* Remove margin for vertical layout */
+//     margin-bottom: 0.5rem; /* Add spacing below logo */
+//   }
+
+//   .logo {
+//     width: 50px; /* Smaller logo size */
+//     height: 50px;
+//   }
+
+//   .company-name {
+//     font-size: 1rem; /* Smaller font size */
+//   }
+
+//   .role {
+//     font-size: 0.9rem; /* Smaller font size */
+//   }
+// }
+
+@media (max-width: 480px) {
+  .logo {
+    width: 3.5rem; /* Further reduce logo size */
+    height: 3.5rem;
+  }
+
+  .company-name {
+    font-size: 1rem; /* Further reduce font size */
+  }
+
+  .role {
+    font-size: 0.8rem; /* Further reduce font size */
+  }
+  .card {
+    width: 80%;
+  }
+}

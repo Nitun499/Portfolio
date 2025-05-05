@@ -1,14 +1,14 @@
-import React from 'react';
-import { BsLinkedin } from 'react-icons/bs';
-import { FaGithub } from 'react-icons/fa';
-import { MdOutlineEmail } from 'react-icons/md';
-import { SiLeetcode } from 'react-icons/si';
+import React from "react";
+import { BsLinkedin } from "react-icons/bs";
+import { FaGithub } from "react-icons/fa";
+import { MdOutlineEmail } from "react-icons/md";
+import { SiLeetcode } from "react-icons/si";
 
-import './footer.css';
+import "./footer.css";
 
 const Footer = () => {
   return (
-    <footer id="footer">
+    <footer id="contact">
       <a href="#home" className="footer__logo">
         Nitun Singh
       </a>

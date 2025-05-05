@@ -1,46 +1,46 @@
-import './Experience.scss';
-import ImpactLogo from '../../assets/ImpactAnalyticsLogo.jfif';
-import Hitbullseye from '../../assets/HitbullseyeLogo.jfif';
-import PrescientaiLogo from '../../assets/PrescientaiLogo.jfif';
-import GDSCLogo from '../../assets/GDSCLOGO.png';
+import "./Experience.scss";
+import ImpactLogo from "../../assets/ImpactAnalyticsLogo.jfif";
+import Hitbullseye from "../../assets/HitbullseyeLogo.jfif";
+import PrescientaiLogo from "../../assets/PrescientaiLogo.jfif";
+import GDSCLogo from "../../assets/google_Icon.svg";
 
 const ExperienceConstant = [
   {
     id: 1,
-    companyName: 'Impact Analytics',
-    role: 'Software Engineer',
+    companyName: "Impact Analytics",
+    role: "Software Engineer",
     companyLogo: ImpactLogo,
-    companyLink: '',
-    startingYear: 'Aug-2024',
-    endYear: 'current',
+    companyLink: "",
+    startingYear: "Aug-2024",
+    endYear: "current",
   },
   {
     id: 2,
-    companyName: 'Prescientai',
-    role: 'Software Engineer',
+    companyName: "Prescientai",
+    role: "Software Engineer",
     companyLogo: PrescientaiLogo,
-    companyLink: 'https://prescientai.in/',
-    startingYear: 'Aug-2024',
-    endYear: 'current',
+    companyLink: "https://prescientai.in/",
+    startingYear: "Aug-2024",
+    endYear: "current",
   },
   {
     id: 3,
-    companyName: 'Hitbullseye',
-    role: 'Teaching Assistant',
+    companyName: "Hitbullseye",
+    role: "Teaching Assistant",
     companyLogo: Hitbullseye,
-    companyLink: 'https://www.hitbullseye.com/',
-    startingYear: 'Aug-2024',
-    endYear: 'current',
+    companyLink: "https://www.hitbullseye.com/",
+    startingYear: "Aug-2024",
+    endYear: "current",
   },
 
   {
     id: 4,
-    companyName: 'Google Developer Student Club',
-    role: 'DSA Mentor',
+    companyName: "Google Developer Student Club",
+    role: "DSA Mentor",
     companyLogo: GDSCLogo,
-    companyLink: '',
-    startingYear: 'Aug-2024',
-    endYear: 'current',
+    companyLink: "",
+    startingYear: "Aug-2024",
+    endYear: "current",
   },
 ];
 
@@ -49,7 +49,7 @@ const Experience = () => {
     <div
       id="experience"
       className="container experience-container"
-      style={{ marginTop: '3rem' }}
+      style={{ marginTop: "3rem" }}
     >
       <h2>Experience</h2>
       <div className="experience_container_ele_wrapper">

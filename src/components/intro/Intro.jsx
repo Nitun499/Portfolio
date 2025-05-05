@@ -60,7 +60,7 @@ const Intro = () => {
             spirit, I’m adept at delivering polished, performant applications
             within a team environment.
           </p>
-          <a href="#footer" className="btn btn-primary">
+          <a href="#contact" className="btn btn-primary">
             Let's Talk
           </a>
         </div>
